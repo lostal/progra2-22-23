@@ -1,0 +1,33 @@
+@startuml
+class com.progra.vehicle.VehicleWithEngine {
+}
+class com.progra.vehicle.Scooter {
+}
+class com.progra.vehicle.Vehicle {
+}
+class com.progra.vehicle.Bicycle {
+}
+class com.progra.vehicle.Truck {
+}
+class com.progra.vehicle.Motorcycle {
+}
+class com.progra.vehicle.Car {
++ String model
++ String getModel()
++ void setModel(String)
+}
+class com.progra.vehicle.Main {
++ {static} void main(String[])
+}
+class com.progra.vehicle.VehicleWithOutEngine {
+}
+
+
+com.progra.vehicle.Vehicle <|-- com.progra.vehicle.VehicleWithEngine
+com.progra.vehicle.VehicleWithOutEngine <|-- com.progra.vehicle.Scooter
+com.progra.vehicle.VehicleWithOutEngine <|-- com.progra.vehicle.Bicycle
+com.progra.vehicle.VehicleWithEngine <|-- com.progra.vehicle.Truck
+com.progra.vehicle.VehicleWithEngine <|-- com.progra.vehicle.Motorcycle
+com.progra.vehicle.VehicleWithEngine <|-- com.progra.vehicle.Car
+com.progra.vehicle.Vehicle <|-- com.progra.vehicle.VehicleWithOutEngine
+@enduml

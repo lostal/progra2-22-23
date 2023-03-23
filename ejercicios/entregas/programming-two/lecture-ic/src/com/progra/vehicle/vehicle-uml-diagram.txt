@@ -1,0 +1,9 @@
+@startuml
+
+Vehicle <|-- Car
+Vehicle <|-- Truck
+Vehicle <|-- Motorcycle
+Vehicle <|-- Bicycle
+Vehicle <|-- Scooter
+
+@enduml

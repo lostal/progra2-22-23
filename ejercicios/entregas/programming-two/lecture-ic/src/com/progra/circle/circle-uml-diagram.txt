@@ -1,0 +1,28 @@
+@startuml
+class Circle {
+  - int x_center
+  - int y_center
+  - int radius
+  - {static} final double PI = 3.14159265358979323;
+
+  + Circle()
+  + void setCenter(int x, int y)
+  + void setRadius(int r)
+  + double length()
+  + double area()
+  + void draw()
+  
+}
+
+class ColoredCircle {
+  - int color
+
+  + ColoredCircle()
+  + void setColor(int c)
+  + int getColor()
+  + void draw()
+}
+
+Circle <|-- ColoredCircle
+
+@endumlA
